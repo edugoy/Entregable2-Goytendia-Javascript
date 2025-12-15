@@ -3,26 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora de notas</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <h1>Calculador de notas</h1>
+    <main class="container"> 
+        <h1>Calculador de notas</h1>
 
-    <form id="form-nota">
-        <label>Nota (1 a 10):</label>
-        <input id="input-nota" type="number" min="1" max="10" required>
-        <button>Agregar</button>
-    </form>
+        <p id="status" class="status">Cargando condfiguracion...</p>
+    
+        <form id="form-nota">
+            <label for="form">Nota (1 a 10):</label>
+            <input id="input-nota" type="number" min="1" max="10" required>
+            <button class="submit">Agregar</button>
+        </form>
 
-    <h3>Notas ingresadas</h3>
-    <div id="lista"></div>
+        <section class="card">
+            <h3>Notas ingresadas</h3>
+            <div id="lista" class="lista"></div>
+            
+            <h3>Promedio</h3>
+            <p id="promedio"></p>
+                        
+            <button id="limpiar" class="danger" type="button">Limpiar todo</button>
+        </section>
+    </main>
 
-    <h3>Promedio</h3>
-    <p id="promedio"></p>
+    <!-- Libreria SweetAlerrt -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <button id="limpiar">Limpiar todo</button>
-
-    <script src="js/main.js"></script>
-
+    <!-- Mis scripts -->
+    <script src="js/services.js" defer></script>
+    <script src="js/ui.js" defer></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>

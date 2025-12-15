@@ -1,0 +1,14 @@
+{
+  "umbralAprobacion": 6,
+  "umbralPromocion": 8,
+  "mensajes": {
+    "tituloOk": "Nota registrada",
+    "tituloError": "Dato inválido",
+    "textoErrorRango": "Ingresá una nota entre 1 y 10.",
+    "tituloConfirm": "¿Eliminar todo?",
+    "textoConfirm": "Se borrarán todas las notas guardadas.",
+    "btnConfirm": "Sí, borrar",
+    "btnCancel": "Cancelar",
+    "tituloResumen": "Resumen actualizado"
+  }
+}

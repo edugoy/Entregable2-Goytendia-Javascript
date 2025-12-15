@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 24px;
+  background: #f6f7fb;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 10px;
+  margin: 14px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input, button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.danger {
+  background: #b00020;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.lista p {
+  margin: 8px 0;
+}
+
+.status {
+  margin: 0 0 12px 0;
+  color: #444;
+}
+.status.ok { color: #0b6b2f; }
+.status.err { color: #b00020; }
